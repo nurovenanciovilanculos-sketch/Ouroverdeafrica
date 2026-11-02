@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubra como o agronegócio e o ouro verde estão a abrir novas oportunidades na África Austral. Conheça o e-book Ouro Verde na África Austral.">
+  <meta name="theme-color" content="#123b2b">
+  <title>Ouro Verde na África Austral | E-book</title>
+  <style>
+    :root {
+      --green: #123b2b;
+      --green-2: #1e5b3f;
+      --gold: #d6ad54;
+      --cream: #f8f5ed;
+      --ink: #18231d;
+      --muted: #647168;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, Arial, sans-serif; color: var(--ink); background: var(--cream); line-height: 1.6; }
+    a { text-decoration: none; }
+    .topbar { background: var(--green); color: #f5e7bd; text-align: center; padding: 9px 16px; font-size: .85rem; letter-spacing: .04em; }
+    header { display:flex; align-items:center; justify-content:space-between; max-width:1160px; padding:22px 24px; margin:auto; }
+    .brand { color:var(--green); font-weight:900; letter-spacing:.08em; font-size:1.05rem; }
+    .brand span { color:var(--gold); }
+    .nav-cta { background:var(--green); color:white; padding:11px 18px; border-radius:999px; font-weight:700; font-size:.92rem; }
+    .hero { background: radial-gradient(circle at 78% 24%, #32684a 0, transparent 32%), linear-gradient(120deg, #0c2c20, #174a34 65%, #0e3526); color:white; overflow:hidden; }
+    .hero-inner { max-width:1160px; margin:auto; padding:70px 24px 78px; display:grid; grid-template-columns:1.12fr .88fr; gap:52px; align-items:center; }
+    .eyebrow { color:#e4c56f; text-transform:uppercase; letter-spacing:.16em; font-weight:800; font-size:.78rem; }
+    h1 { font-family: Georgia, 'Times New Roman', serif; font-size:clamp(2.5rem, 5vw, 4.5rem); line-height:1.04; margin:18px 0 22px; letter-spacing:-.035em; }
+    h1 em { color:#e3c36c; font-style:normal; }
+    .hero p { color:#e0e9e2; font-size:1.12rem; max-width:590px; margin:0 0 28px; }
+    .buttons { display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+    .button { display:inline-flex; justify-content:center; align-items:center; padding:15px 23px; border-radius:8px; font-weight:800; transition:transform .2s, opacity .2s; }
+    .button:hover { transform:translateY(-2px); opacity:.95; }
+    .button.gold { background:var(--gold); color:#15281d; box-shadow:0 10px 26px #0002; }
+    .button.outline { border:1px solid #ffffff70; color:white; }
+    .micro { margin-top:16px; font-size:.83rem; color:#c8d8ce; }
+    .book-wrap { display:flex; justify-content:center; perspective:1000px; }
+    .book { width:min(340px, 82vw); aspect-ratio: .72; position:relative; background:linear-gradient(145deg,#17452e,#0a2419); border:1px solid #d5b35d; box-shadow:22px 25px 40px #0006; transform:rotateY(-8deg) rotateZ(-1deg); padding:28px 24px; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden; }
+    .book:before { content:""; position:absolute; inset:12px; border:1px solid #d6ad5470; pointer-events:none; }
+    .book:after { content:""; position:absolute; width:260px; height:260px; border:1px solid #d6ad543d; border-radius:50%; right:-80px; bottom:30px; box-shadow:0 0 0 18px #d6ad5410, 0 0 0 38px #d6ad5409; }
+    .book-kicker { position:relative; z-index:1; color:#e4c56f; letter-spacing:.16em; font-size:.65rem; font-weight:800; }
+    .book-title { position:relative; z-index:1; font-family:Georgia,serif; font-size:clamp(2rem,4vw,2.7rem); line-height:1.02; color:#fff; margin-top:24px; }
+    .book-title span { color:#e4c56f; }
+    .book-sub { position:relative; z-index:1; color:#d7e1d8; font-size:.8rem; margin-top:14px; }
+    .leaf { position:absolute; z-index:1; bottom:38px; right:36px; width:120px; height:170px; opacity:.9; }
+    .book-footer { position:relative; z-index:1; color:#e4c56f; font-size:.7rem; letter-spacing:.18em; font-weight:700; }
+    section { padding:78px 24px; }
+    .container { max-width:1100px; margin:auto; }
+    .section-label { color:var(--green-2); font-size:.78rem; font-weight:900; text-transform:uppercase; letter-spacing:.15em; }
+    h2 { font-family:Georgia,serif; font-size:clamp(2rem,3.6vw,3rem); line-height:1.12; margin:12px 0 18px; color:var(--green); }
+    .intro { max-width:700px; color:var(--muted); font-size:1.05rem; }
+    .benefits { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:36px; }
+    .card { background:white; border:1px solid #e9e5d9; border-radius:14px; padding:25px; box-shadow:0 8px 25px #173e2910; }
+    .icon { width:44px; height:44px; display:grid; place-items:center; border-radius:12px; background:#e8efe7; color:var(--green); font-size:1.25rem; margin-bottom:15px; }
+    .card h3 { margin:0 0 8px; color:var(--green); font-size:1.12rem; }
+    .card p { margin:0; color:var(--muted); font-size:.95rem; }
+    .feature { background:#eee9dc; }
+    .feature-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:55px; align-items:center; }
+    .checklist { list-style:none; padding:0; margin:25px 0; }
+    .checklist li { margin:12px 0; padding-left:30px; position:relative; color:#3e5145; }
+    .checklist li:before { content:"✓"; position:absolute; left:0; color:var(--green-2); font-weight:900; }
+    .quote-box { background:var(--green); color:white; padding:32px; border-radius:16px; }
+    .quote-box .big { font-family:Georgia,serif; color:#e4c56f; font-size:2.4rem; line-height:1; }
+    .quote-box p { color:#e1e9e2; margin:15px 0 0; }
+    .buy { background:var(--green); color:white; text-align:center; }
+    .buy h2 { color:white; }
+    .buy .intro { color:#d7e4da; margin:0 auto 28px; }
+    .buy .button { font-size:1.05rem; }
+    .trust { color:#c7d7cb; margin-top:16px; font-size:.83rem; }
+    .faq { max-width:850px; margin:32px auto 0; }
+    details { background:white; border:1px solid #e6e2d8; border-radius:10px; padding:18px 20px; margin:12px 0; }
+    summary { cursor:pointer; color:var(--green); font-weight:800; }
+    details p { color:var(--muted); margin-bottom:0; }
+    footer { background:#0a2419; color:#bdcfc2; text-align:center; padding:26px 18px; font-size:.85rem; }
+    footer a { color:#e4c56f; }
+    @media (max-width:800px) {
+      .hero-inner,.feature-grid { grid-template-columns:1fr; gap:38px; }
+      .hero-inner { padding-top:52px; }
+      .book-wrap { order:-1; }
+      .book { width:min(285px,78vw); }
+      .benefits { grid-template-columns:1fr; }
+      section { padding:58px 20px; }
+      header { padding:17px 20px; }
+    }
+    @media (max-width:440px) { .nav-cta { padding:9px 12px; font-size:.8rem; } .buttons .button { width:100%; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">CONHECIMENTO • AGRONEGÓCIO • OPORTUNIDADES NA ÁFRICA AUSTRAL</div>
+  <header>
+    <a class="brand" href="#" aria-label="Ouro Verde início">OURO<span>VERDE</span></a>
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end"><a class="nav-cta" href="https://wa.me/258855007069?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20e-book%20Ouro%20Verde." target="_blank" rel="noopener">Falar no WhatsApp</a><a class="nav-cta" href="https://checkout.escalepay.com/9050571" target="_blank" rel="noopener">Adquirir e-book ↗</a></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">E-book • África Austral</div>
+          <h1>Ouro Verde na África Austral: <em>a nova fronteira do agronegócio</em></h1>
+          <p>Explore o potencial do agronegócio na região e descubra por que a agricultura pode representar uma das grandes oportunidades de desenvolvimento e investimento da África Austral.</p>
+          <div class="buttons">
+            <a class="button gold" href="https://checkout.escalepay.com/9050571" target="_blank" rel="noopener">Quero o meu e-book</a>
+            <a class="button outline" href="#sobre">Conhecer o conteúdo</a>
+            <a class="button outline" href="https://wa.me/258855007069?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20e-book%20Ouro%20Verde." target="_blank" rel="noopener">Tirar dúvidas no WhatsApp</a>
+          </div>
+          <div class="micro">Compra segura através do checkout EscalePay.</div>
+        </div>
+        <div class="book-wrap" aria-label="Representação visual da capa do e-book">
+          <div class="book">
+            <div>
+              <div class="book-kicker">GUIA DE OPORTUNIDADES</div>
+              <div class="book-title">OURO<br><span>VERDE</span><br>NA ÁFRICA<br>AUSTRAL</div>
+              <div class="book-sub">A nova fronteira do agronegócio</div>
+            </div>
+            <svg class="leaf" viewBox="0 0 120 170" aria-hidden="true">
+              <path d="M18 155 C25 80 62 28 108 12 C105 72 75 137 18 155Z" fill="#d6ad54" opacity=".85"/>
+              <path d="M18 155 C48 105 73 62 108 12 M45 113 L31 79 M65 83 L61 48 M82 54 L97 52 M34 130 L74 126" stroke="#173c29" stroke-width="2" fill="none"/>
+            </svg>
+            <div class="book-footer">AGRICULTURA • FUTURO • VALOR</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="container">
+        <div class="section-label">O que vais encontrar</div>
+        <h2>Uma visão estratégica sobre o potencial da região</h2>
+        <p class="intro">Este e-book foi pensado para quem deseja compreender melhor o cenário agrícola da África Austral, identificar tendências e ampliar a sua visão sobre oportunidades ligadas à produção e ao agronegócio.</p>
+        <div class="benefits">
+          <article class="card">
+            <div class="icon">🌱</div>
+            <h3>Potencial agrícola</h3>
+            <p>Conheça os factores que tornam a agricultura uma actividade estratégica para a região.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🌍</div>
+            <h3>Contexto regional</h3>
+            <p>Explore desafios e oportunidades do agronegócio nos países da África Austral.</p>
+          </article>
+          <article class="card">
+            <div class="icon">📈</div>
+            <h3>Novas perspectivas</h3>
+            <p>Amplie a sua compreensão sobre tendências, valor económico e desenvolvimento sustentável.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="container feature-grid">
+        <div>
+          <div class="section-label">Para quem é este e-book?</div>
+          <h2>Conhecimento para olhar além do presente</h2>
+          <p class="intro">Uma leitura útil para estudantes, empreendedores, profissionais do sector agrícola e pessoas interessadas no desenvolvimento económico da África Austral.</p>
+          <ul class="checklist">
+            <li>Para quem acompanha o agronegócio e a agricultura.</li>
+            <li>Para quem procura conhecimento sobre oportunidades regionais.</li>
+            <li>Para quem quer aprofundar a sua visão sobre o futuro agrícola.</li>
+          </ul>
+          <a class="button gold" style="background:var(--green);color:white" href="https://checkout.escalepay.com/9050571" target="_blank" rel="noopener">Aceder ao checkout</a>
+        </div>
+        <div class="quote-box">
+          <div class="big">“</div>
+          <p>O conhecimento é uma das sementes mais valiosas para reconhecer oportunidades e construir um futuro mais produtivo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="buy" id="comprar">
+      <div class="container">
+        <div class="section-label" style="color:#e4c56f">Dá o próximo passo</div>
+        <h2>Descobre o potencial do Ouro Verde</h2>
+        <p class="intro">Adquire o e-book e começa a explorar uma nova perspectiva sobre o agronegócio na África Austral.</p>
+        <a class="button gold" href="https://checkout.escalepay.com/9050571" target="_blank" rel="noopener">COMPRAR AGORA ↗</a>
+        <div class="trust">O pagamento é efectuado na página de checkout da EscalePay.</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-label" style="text-align:center">Perguntas frequentes</div>
+        <h2 style="text-align:center">Tens alguma dúvida?</h2>
+        <div class="faq">
+          <details>
+            <summary>Como faço para adquirir o e-book?</summary>
+            <p>Clica em qualquer botão de compra desta página. Serás encaminhado para o checkout EscalePay, onde poderás concluir a compra.</p>
+          </details>
+          <details>
+            <summary>O pagamento é feito neste site?</summary>
+            <p>Não. Esta página apresenta o produto. O pagamento é processado na página de checkout da EscalePay.</p>
+          </details>
+          <details>
+            <summary>Quem pode beneficiar deste conteúdo?</summary>
+            <p>Estudantes, empreendedores, profissionais agrícolas e leitores interessados no agronegócio e no desenvolvimento da África Austral.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div style="margin-bottom:12px"><a class="button gold" style="color:#15281d;padding:10px 16px" href="https://wa.me/258855007069?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20e-book%20Ouro%20Verde." target="_blank" rel="noopener">Falar connosco pelo WhatsApp</a></div>
+    <div>© <span id="year"></span> Ouro Verde na África Austral. Todos os direitos reservados.</div>
+    <div style="margin-top:8px">Checkout protegido pela <a href="https://checkout.escalepay.com/9050571" target="_blank" rel="noopener">EscalePay</a>.</div>
+  </footer>
+  <a href="https://wa.me/258855007069?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20e-book%20Ouro%20Verde." target="_blank" rel="noopener" aria-label="Contactar pelo WhatsApp" style="position:fixed;right:18px;bottom:18px;z-index:20;background:#25D366;color:#073b20;padding:13px 17px;border-radius:999px;font-weight:800;box-shadow:0 6px 20px #0003">WhatsApp ↗</a>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
